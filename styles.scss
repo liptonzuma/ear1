@@ -15,7 +15,8 @@
     // --fs-xl:8.8vw;
     // --fs-md:1.4vw;
     --fs-md:Clamp(.8rem, 1.4vw + 1rem ,1.45vw );
-    --lg-w:Clamp(4vw, 8vw + 1rem, 8vw)
+    --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
+    --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
 }
 *{
     margin:0;
@@ -27,6 +28,9 @@ html{
     font-family:var(--ff) !important;
 }
 nav{
+    position: fixed;
+    width: 100vw;
+    top: 0;
     padding:2rem 3.5rem;
     display: flex;
     align-items: center;
@@ -60,6 +64,7 @@ a{
 
 }
 main{
+    padding-top: 10%;
     background: var(--clr-green);
     overflow-x: hidden !important;
     .hero{
@@ -94,7 +99,17 @@ main{
     }
         
     }
+    .download{
+        display: flex;
+        padding: 2rem 0rem;
+        gap:2rem;
+        img{
+            width:var(--btn-img-w);
+            cursor: pointer;
+        }
+    }
 }
+
 
 
 //////////////////////////////////Breakpoints 760px////////////////////////

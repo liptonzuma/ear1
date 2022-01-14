@@ -9,8 +9,8 @@
   --fs-sm:Clamp(.7rem, 1.2vw + 1rem, 1.2vw);
   --fs-xl:Clamp(4vw, 8.9vw + 1rem ,8.9vw);
   --fs-md:Clamp(.8rem, 1.4vw + 1rem ,1.45vw );
-  --lg-w:Clamp(4vw, 8vw + 1rem, 8vw)
-;
+  --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
+  --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
 }
 
 * {
@@ -26,6 +26,9 @@ html {
 }
 
 nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
   padding: 2rem 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +74,7 @@ a {
 }
 
 main {
+  padding-top: 10%;
   background: var(--clr-green);
   overflow-x: hidden !important;
 }
@@ -115,6 +119,19 @@ main .hero .lead-container .first {
 main .hero .lead-container .lead {
   font-size: var(--fs-md);
   font-weight: var(--fw-400);
+}
+
+main .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0rem;
+  gap: 2rem;
+}
+
+main .download img {
+  width: var(--btn-img-w);
+  cursor: pointer;
 }
 
 @media (max-width: 760px) {
