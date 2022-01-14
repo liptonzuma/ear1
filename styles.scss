@@ -184,7 +184,9 @@ main{
             font-size: var(--fs-md);
         }
         .header{
-            font-size: 4vw;
+            font-size: 5vw;
+            padding-top: 2vw;
+            font-weight: var(--fw-500);
         }
     }
 }
