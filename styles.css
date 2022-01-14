@@ -12,6 +12,7 @@
   --fs-xl:Clamp(4vw, 8.9vw + 1rem ,8.9vw);
   --fs-md:Clamp(.7rem, 1.4vw + 1rem ,1.45vw );
   --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
+  --fs-regular:Clamp(1.1rem,1.35vw + 1rem , 1.35vw);
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
   --phones-w:Clamp(45vw,90vw + 1rem, 90vw);
@@ -171,7 +172,7 @@ main .feature .lead {
   width: var(--p-w);
   padding-top: 2vw;
   color: var(--clr-gray);
-  font-size: var(--fs-sm);
+  font-size: var(--fs-regular);
 }
 
 @media (max-width: 760px) {
