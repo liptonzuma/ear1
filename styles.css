@@ -7,12 +7,14 @@
   --fw-700:700;
   --fw-500:500;
   --fw-400:400;
-  --fs-sm:Clamp(.7rem, 1.2vw + 1rem, 1.2vw);
+  --fs-sm:Clamp(.6rem, 1.2vw + 1rem, 1.2vw);
   --fs-xl:Clamp(4vw, 8.9vw + 1rem ,8.9vw);
-  --fs-md:Clamp(.9rem, 1.4vw + 1rem ,1.45vw );
+  --fs-md:Clamp(.7rem, 1.4vw + 1rem ,1.45vw );
+  --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
-  --phones-w:Clamp(45vw,90vw + 1rem, 90vw)
+  --phones-w:Clamp(45vw,90vw + 1rem, 90vw);
+  --h1-w:Min(90%,30rem)
 ;
 }
 
@@ -31,6 +33,7 @@ html {
 
 nav {
   position: fixed;
+  z-index: 10000;
   width: 100vw;
   top: 0;
   padding: 2rem 3.5rem;
@@ -147,6 +150,18 @@ main .image .phones {
   -webkit-transform: translateY(1.5rem);
           transform: translateY(1.5rem);
   width: var(--phones-w);
+}
+
+main .feature {
+  background: var(--clr-white);
+  padding: 10%;
+}
+
+main .feature h3 {
+  font-size: var(--fs-lg);
+  width: var(--h1-w);
+  color: var(--clr-green);
+  line-height: 5vw;
 }
 
 @media (max-width: 760px) {
