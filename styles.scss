@@ -177,15 +177,18 @@ main{
         gap: 8rem;
         padding:2% 10% 2% 10%;
         background: var(--clr-white);
+        padding-bottom: 10%;
+
         .container{
             width: 50%;
+
         }
         .btn{
             background: var(--clr-orange);
             width:var(--btn-w);
             text-align: center;
             border-radius: 2.5vw;
-            padding: .2vw 0;
+            // padding: .2vw 0;
             text-transform: capitalize;
         }
         .btnText{
@@ -195,7 +198,7 @@ main{
             font-size:var(--fs-header);
             padding-top: 2vw;
             font-weight: var(--fw-500);
-            line-height: 5.4vw;
+            line-height: 5vw;
             opacity: .9;
         }
         .lead{
@@ -212,6 +215,34 @@ main{
                 width: 29vw;
             }
 
+        }
+    }
+    .chat{
+        display: flex;
+        align-items: center;
+        background: var(--clr-green);
+        .btn{
+            background: var(--clr-orange);
+            width:var(--btn-w);
+            text-align: center;
+            border-radius: 2.5vw;
+            // padding: .2vw 0;
+            text-transform: capitalize;
+
+        }
+        .btnText{
+            font-size: var(--fs-md);
+        }
+        .text{
+            padding:0% 10% 2% 10%;
+            width: 50%;
+            background: var(--clr-green);
+
+        }
+        .chat-area{
+            width: 50%;
+            background: var(--clr-white);
+            height: 50vh;
         }
     }
 }

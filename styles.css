@@ -218,6 +218,7 @@ main .fans {
   gap: 8rem;
   padding: 2% 10% 2% 10%;
   background: var(--clr-white);
+  padding-bottom: 10%;
 }
 
 main .fans .container {
@@ -229,7 +230,6 @@ main .fans .btn {
   width: var(--btn-w);
   text-align: center;
   border-radius: 2.5vw;
-  padding: .2vw 0;
   text-transform: capitalize;
 }
 
@@ -241,7 +241,7 @@ main .fans .header {
   font-size: var(--fs-header);
   padding-top: 2vw;
   font-weight: var(--fw-500);
-  line-height: 5.4vw;
+  line-height: 5vw;
   opacity: .9;
 }
 
@@ -266,6 +266,40 @@ main .fans .influencer {
 
 main .fans .influencer img {
   width: 29vw;
+}
+
+main .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--clr-green);
+}
+
+main .chat .btn {
+  background: var(--clr-orange);
+  width: var(--btn-w);
+  text-align: center;
+  border-radius: 2.5vw;
+  text-transform: capitalize;
+}
+
+main .chat .btnText {
+  font-size: var(--fs-md);
+}
+
+main .chat .text {
+  padding: 0% 10% 2% 10%;
+  width: 50%;
+  background: var(--clr-green);
+}
+
+main .chat .chat-area {
+  width: 50%;
+  background: var(--clr-white);
+  height: 50vh;
 }
 
 @media (max-width: 760px) {
