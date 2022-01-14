@@ -14,6 +14,7 @@
   --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
   --fs-regular:Clamp(.8rem,1.35vw + 1rem , 1.35vw);
   --fs-header:Clamp(2.4vw,4.88vw + 1rem, 4.88vw);
+  --fs-btn:Clamp(.6vw, 1.2vw + 1rem, 1.2vw);
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
   --phones-w:Clamp(45vw,90vw + 1rem, 90vw);
@@ -216,9 +217,8 @@ main .fans {
       -ms-flex-align: center;
           align-items: center;
   gap: 8rem;
-  padding: 2% 10% 2% 10%;
+  padding: 10%;
   background: var(--clr-white);
-  padding-bottom: 10%;
   width: 100%;
 }
 
@@ -235,7 +235,8 @@ main .fans .btn {
 }
 
 main .fans .btnText {
-  font-size: var(--fs-md);
+  font-size: var(--fs-btn);
+  padding: .4vw 0;
 }
 
 main .fans .header {
@@ -280,7 +281,7 @@ main .chat {
 }
 
 main .chat .text {
-  padding: 0% 10% 2% 10%;
+  padding: 0% 8% 2% 10%;
   width: 50%;
   background: var(--clr-green);
 }
@@ -294,7 +295,8 @@ main .chat .text .btn {
 }
 
 main .chat .text .btnText {
-  font-size: var(--fs-md);
+  font-size: var(--fs-btn);
+  padding: .4vw 0;
 }
 
 main .chat .text .wrapper {
@@ -310,7 +312,18 @@ main .chat .text .wrapper {
 }
 
 main .chat .text .wrapper img {
-  width: 4vw;
+  width: 4.5vw;
+}
+
+main .chat .text .container {
+  padding-top: 7%;
+  color: var(--clr-white);
+}
+
+main .chat .text .container h1 {
+  font-size: var(--fs-header);
+  font-weight: var(--fw-500);
+  line-height: var(--fs-header);
 }
 
 main .chat .chat-area {
