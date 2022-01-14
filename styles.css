@@ -12,7 +12,7 @@
   --fs-md:Clamp(.9rem, 1.4vw + 1rem ,1.45vw );
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
-  --phones-w:Clamp(35vw,60vw + 1rem, 60vw)
+  --phones-w:Clamp(45vw,90vw + 1rem, 90vw)
 ;
 }
 
@@ -144,8 +144,8 @@ main .image {
 }
 
 main .image .phones {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(1.5rem);
+          transform: translateY(1.5rem);
   width: var(--phones-w);
 }
 
