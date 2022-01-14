@@ -13,11 +13,13 @@
   --fs-md:Clamp(.7rem, 1.4vw + 1rem ,1.45vw );
   --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
   --fs-regular:Clamp(.8rem,1.35vw + 1rem , 1.35vw);
+  --fs-header:Clamp(2.4vw,4.88vw + 1rem, 4.88vw);
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
   --phones-w:Clamp(45vw,90vw + 1rem, 90vw);
   --h1-w:Min(90%,30rem);
-  --p-w:Min(90%,40rem)
+  --p-w:Min(90%,40rem);
+  --btn-w:Clamp(3rem, 7vw + 1rem,7vw)
 ;
 }
 
@@ -207,13 +209,24 @@ main .feature .container .small {
 }
 
 main .fans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8rem;
   padding: 2% 10% 2% 10%;
   background: var(--clr-white);
 }
 
+main .fans .container {
+  width: 50%;
+}
+
 main .fans .btn {
   background: var(--clr-orange);
-  width: 7vw;
+  width: var(--btn-w);
   text-align: center;
   border-radius: 2.5vw;
   padding: .2vw 0;
@@ -225,14 +238,56 @@ main .fans .btnText {
 }
 
 main .fans .header {
-  font-size: 5vw;
+  font-size: var(--fs-header);
   padding-top: 2vw;
   font-weight: var(--fw-500);
+  line-height: 5.4vw;
+  opacity: .9;
+}
+
+main .fans .lead {
+  padding-top: 5%;
+  color: var(--clr-gray);
+  font-size: var(--fs-md);
+}
+
+main .fans .influencer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .fans .influencer img {
+  width: 29vw;
 }
 
 @media (max-width: 760px) {
   nav .nav-items li {
     margin-right: 2rem;
+  }
+  main .fans {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 1rem;
+  }
+  main .fans .container {
+    width: 100%;
+  }
+  main .fans .influencer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .fans .influencer img {
+    width: 50vw;
   }
 }
 
