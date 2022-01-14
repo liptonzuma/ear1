@@ -178,6 +178,8 @@ main{
         padding:2% 10% 2% 10%;
         background: var(--clr-white);
         padding-bottom: 10%;
+        width: 100%;
+
 
         .container{
             width: 50%;
@@ -221,22 +223,31 @@ main{
         display: flex;
         align-items: center;
         background: var(--clr-green);
-        .btn{
-            background: var(--clr-orange);
-            width:var(--btn-w);
-            text-align: center;
-            border-radius: 2.5vw;
-            // padding: .2vw 0;
-            text-transform: capitalize;
-
-        }
-        .btnText{
-            font-size: var(--fs-md);
-        }
+       
         .text{
             padding:0% 10% 2% 10%;
             width: 50%;
             background: var(--clr-green);
+            .btn{
+                background: var(--clr-orange);
+                width:var(--btn-w);
+                text-align: center;
+                border-radius: 2.5vw;
+                text-transform: capitalize;
+    
+            }
+            .btnText{
+                font-size: var(--fs-md);
+            }
+            
+            .wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    width: 4vw;
+                }
+            }
 
         }
         .chat-area{

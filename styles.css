@@ -219,6 +219,7 @@ main .fans {
   padding: 2% 10% 2% 10%;
   background: var(--clr-white);
   padding-bottom: 10%;
+  width: 100%;
 }
 
 main .fans .container {
@@ -278,7 +279,13 @@ main .chat {
   background: var(--clr-green);
 }
 
-main .chat .btn {
+main .chat .text {
+  padding: 0% 10% 2% 10%;
+  width: 50%;
+  background: var(--clr-green);
+}
+
+main .chat .text .btn {
   background: var(--clr-orange);
   width: var(--btn-w);
   text-align: center;
@@ -286,14 +293,24 @@ main .chat .btn {
   text-transform: capitalize;
 }
 
-main .chat .btnText {
+main .chat .text .btnText {
   font-size: var(--fs-md);
 }
 
-main .chat .text {
-  padding: 0% 10% 2% 10%;
-  width: 50%;
-  background: var(--clr-green);
+main .chat .text .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .chat .text .wrapper img {
+  width: 4vw;
 }
 
 main .chat .chat-area {
