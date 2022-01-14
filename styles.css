@@ -3,6 +3,7 @@
   --clr-white:#FFFF;
   --clr-black:#000;
   --clr-orange:#ffbb62;
+  --clr-gray:gray;
   --ff:'DM Sans', sans-serif;
   --fw-700:700;
   --fw-500:500;
@@ -14,7 +15,8 @@
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
   --phones-w:Clamp(45vw,90vw + 1rem, 90vw);
-  --h1-w:Min(90%,30rem)
+  --h1-w:Min(90%,30rem);
+  --p-w:Min(90%,40rem)
 ;
 }
 
@@ -157,11 +159,19 @@ main .feature {
   padding: 10%;
 }
 
-main .feature h3 {
+main .feature h1 {
   font-size: var(--fs-lg);
   width: var(--h1-w);
   color: var(--clr-green);
   line-height: 5vw;
+  font-weight: var(--fw-500);
+}
+
+main .feature .lead {
+  width: var(--p-w);
+  padding-top: 2vw;
+  color: var(--clr-gray);
+  font-size: var(--fs-sm);
 }
 
 @media (max-width: 760px) {
