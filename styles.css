@@ -16,7 +16,7 @@
   --fs-md:Clamp(.7rem, 1.4vw + 1rem ,1.45vw );
   --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
   --fs-regular:Clamp(.8rem,1.35vw + 1rem , 1.35vw);
-  --fs-header:Clamp(2.4vw,4.88vw + 1rem, 4.88vw);
+  --fs-header:Clamp(2.44vw,4.88vw + 1rem, 4.88vw);
   --fs-btn:Clamp(.6vw, 1.2vw + 1rem, 1.2vw);
   --lg-w:Clamp(4vw, 8vw + 1rem ,8vw);
   --btn-img-w:Clamp(9vw,18vw + 1rem,18vw);
@@ -442,6 +442,20 @@ main .chat .chat-area .center .third small {
   }
   main .fans .influencer img {
     width: 50vw;
+  }
+  main .chat {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .chat .text, main .chat .chat-area {
+    width: 100%;
+  }
+  main .chat .chat-area .center img {
+    width: 80vw;
+  }
+  main .chat .chat-area .center .first, main .chat .chat-area .center .second, main .chat .chat-area .center .third {
+    width: 80vw;
+    margin: 5% 0;
   }
 }
 

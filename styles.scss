@@ -20,7 +20,7 @@
     --fs-md:Clamp(.7rem, 1.4vw + 1rem ,1.45vw );
     --fs-lg:Clamp(3vw, 5vw + 1rem,5vw);
     --fs-regular:Clamp(.8rem,1.35vw + 1rem , 1.35vw);
-    --fs-header:Clamp(2.4vw,4.88vw + 1rem, 4.88vw);
+    --fs-header:Clamp(2.44vw,4.88vw + 1rem, 4.88vw);
     --fs-btn:Clamp(.6vw, 1.2vw + 1rem, 1.2vw);
 
     
@@ -359,6 +359,24 @@ main{
                 img{
                     width:50vw
                 }
+            }
+        }
+        .chat{
+            flex-wrap: wrap;
+            .text,.chat-area{
+                width: 100%;
+            }
+            .chat-area{
+                .center{
+
+                img{
+                    width: 80vw;
+                }
+                .first,.second,.third{
+                    width: 80vw;
+                    margin: 5% 0;
+                }
+            }
             }
         }
     }
