@@ -331,6 +331,29 @@ main{
                     }
                 }
             }
+            .input{
+                background: var(--clr-white);
+                margin-top: 5%;
+                padding: 2%;
+                width: 80%;
+                .container{
+                    width: 90%;
+                    background: #eee;
+                    padding: 3%;
+                    border-radius: .5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .clip1{
+                        opacity: .7;
+                        margin-right:.7rem ;
+                    }
+                    img{
+                      width: 2vw;  
+                      transform: translateY(.05vw);
+                    }
+                }
+            }
         }
     }
 }

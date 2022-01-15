@@ -422,6 +422,40 @@ main .chat .chat-area .center .third small {
   font-size: .9vw;
 }
 
+main .chat .chat-area .input {
+  background: var(--clr-white);
+  margin-top: 5%;
+  padding: 2%;
+  width: 80%;
+}
+
+main .chat .chat-area .input .container {
+  width: 90%;
+  background: #eee;
+  padding: 3%;
+  border-radius: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .chat .chat-area .input .container .clip1 {
+  opacity: .7;
+  margin-right: .7rem;
+}
+
+main .chat .chat-area .input .container img {
+  width: 2vw;
+  -webkit-transform: translateY(0.05vw);
+          transform: translateY(0.05vw);
+}
+
 @media (max-width: 760px) {
   nav .nav-items li {
     margin-right: 2rem;
