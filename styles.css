@@ -289,6 +289,9 @@ main .chat .text {
   padding: 8%;
   width: 50%;
   background: var(--clr-green);
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
 }
 
 main .chat .text .btn {
@@ -385,7 +388,7 @@ main .chat .chat-area .center .first {
 }
 
 main .chat .chat-area .center .first small {
-  font-size: .9vw !important;
+  font-size: .9vw;
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: absolute;
@@ -433,6 +436,9 @@ main .chat .chat-area .input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 10%;
+  -webkit-transform: translateY(2vw);
+          transform: translateY(2vw);
 }
 
 main .chat .chat-area .input .container {
@@ -464,6 +470,54 @@ main .chat .chat-area .input img {
 
 main .chat .chat-area .input .send {
   margin-left: .4rem;
+}
+
+main .influencers {
+  padding-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .influencers .image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .influencers .text {
+  width: 50%;
+}
+
+main .influencers .text .btn {
+  background: var(--clr-copper);
+  width: 8vw;
+  border-radius: 999px;
+  text-align: center;
+  font-weight: var(--fw-500);
+  padding: 0.3rem .5rem;
+}
+
+main .influencers .text .header {
+  font-size: var(--fs-header);
+  font-weight: var(--fw-500);
+  line-height: var(--fs-header);
+  width: 70%;
+  padding-top: 6%;
+}
+
+main .influencers .text .lead {
+  font-size: var(--fs-md);
+  width: 70%;
+  color: var(--clr-gray);
+  padding-top: 5%;
 }
 
 @media (max-width: 760px) {
@@ -498,8 +552,19 @@ main .chat .chat-area .input .send {
     width: 80vw;
   }
   main .chat .chat-area .center .first, main .chat .chat-area .center .second, main .chat .chat-area .center .third {
-    width: 80vw;
+    width: 60vw;
     margin: 5% 0;
+  }
+  main .chat .chat-area .center .first small, main .chat .chat-area .center .second small, main .chat .chat-area .center .third small {
+    font-size: 1.3vw;
+  }
+  main .chat .chat-area .center .first {
+    margin-left: 20vw;
+    padding: 3%;
+  }
+  main .chat .chat-area .center .first small {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
   main .chat .chat-area .input {
     width: 80vw;

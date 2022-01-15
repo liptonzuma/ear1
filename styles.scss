@@ -233,6 +233,7 @@ main{
             padding:8%;
             width: 50%;
             background: var(--clr-green);
+            align-self: stretch;
             .btn{
                 background: var(--clr-orange);
                 width:var(--btn-w);
@@ -298,7 +299,7 @@ main{
                     position: relative;
                     margin-left: 2vw;
                     small{
-                        font-size: .9vw !important;
+                        font-size: .9vw;
                         align-self: flex-end;
                         position: absolute;
                         top:5vw
@@ -338,6 +339,8 @@ main{
                 width: 80%;
                 display: flex;
                 align-items: center;
+                padding-bottom: 10%;
+                transform: translateY(2vw);
                 .container{
                     width: 90%;
                     background: #eee;
@@ -359,6 +362,41 @@ main{
                   .send{
                       margin-left: .4rem;
                   }
+            }
+        }
+    }
+    .influencers{
+        padding-top: 10%;
+        display: flex;
+        align-items: center;
+
+        .image{
+            width:50%;
+            display: flex;
+            justify-content: center;
+        }
+        .text{
+            width:50%;
+            .btn{
+                background: var(--clr-copper);
+                width: 8vw;
+                border-radius: 999px;
+                text-align: center;
+                font-weight: var(--fw-500);
+                padding: 0.3rem .5rem;
+            }
+            .header{
+                font-size: var(--fs-header);
+                font-weight: var(--fw-500);
+                line-height: var(--fs-header);
+                width: 70%;
+                padding-top: 6%;
+            }
+            .lead{
+                font-size: var(--fs-md);
+                width: 70%;
+                color: var(--clr-gray);
+                padding-top: 5%;
             }
         }
     }
@@ -402,9 +440,21 @@ main{
                     width: 80vw;
                 }
                 .first,.second,.third{
-                    width: 80vw;
+                    width: 60vw;
                     margin: 5% 0;
+                    small{
+                        font-size: 1.3vw;
+                    }
                 }
+                .first{
+                    margin-left: 20vw;
+                    padding:3%;
+                    small{
+                    transform: translateY(10%);
+
+                    }
+                }
+                
             }
             .input{
                 width: 80vw;
