@@ -400,10 +400,25 @@ main .chat .chat-area .center .second {
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
   border-bottom-right-radius: 1vw;
-  margin-top: 1.5vw;
+  margin: 1.5vw 0;
 }
 
 main .chat .chat-area .center .second small {
+  font-size: .9vw;
+}
+
+main .chat .chat-area .center .third {
+  width: 25vw;
+  padding: 1vw;
+  background: var(--clr-white);
+  font-size: var(--fs-regular);
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
+  margin: 1.5vw 0;
+}
+
+main .chat .chat-area .center .third small {
   font-size: .9vw;
 }
 
