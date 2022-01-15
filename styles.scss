@@ -280,20 +280,42 @@ main{
                 justify-content: center;
                 flex-direction: column;
                 gap: 3vw;
-
+                margin-left: 5%;
                 img{
                     width: 80%;
-                    transform: translateY(-2vw);
+                    transform: translateY(-1vw);
                 }
                 .first{
-                    width: 30vw;
-                    align-self: flex-end;
+                    width: 27vw;
                     padding: 1vw;
                     background: var(--clr-white);
-                    font-size: var(--fs-md);
+                    font-size: var(--fs-regular);
                     border-top-left-radius: 1vw;
                     border-top-right-radius: 1vw;
                     border-bottom-left-radius: 1vw;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    margin-left: 2vw;
+                    small{
+                        font-size: .9vw !important;
+                        align-self: flex-end;
+                        position: absolute;
+                        top:5vw
+                    }
+                }
+                .second{
+                    width: 16vw;
+                    padding: 1vw;
+                    background: var(--clr-white);
+                    font-size: var(--fs-regular);
+                    border-top-left-radius: 1vw;
+                    border-top-right-radius: 1vw;
+                    border-bottom-right-radius: 1vw;
+                    margin-top: 1.5vw;
+                    small{
+                        font-size: .9vw;
+                    }
                 }
             }
         }
