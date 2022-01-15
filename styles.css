@@ -491,6 +491,9 @@ main .influencers .image {
       -ms-flex-pack: center;
           justify-content: center;
 }
+/* main .influencers .image img{
+  width:80%
+} */
 
 main .influencers .text {
   width: 50%;
@@ -530,6 +533,12 @@ main .influencers .text .lead {
   }
   main .influencers .image, main .influencers .text {
     width: 100%;
+  }
+  main .influencers .image img{
+    width:60vw
+  }
+  main .influencers .text{
+    padding:5%
   }
   main .fans {
     -ms-flex-wrap: wrap;

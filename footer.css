@@ -119,4 +119,34 @@ main .ad {
 main .ad img {
   width: 100vw;
 }
+
+.divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.divider .line {
+  width: 80vw;
+  height: 1.5px;
+  background: #ddd;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media (max-width: 760px) {
+  .black {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .black .text, .black .image {
+    width: 100% !important;
+  }
+  .black .text {
+    margin-top: 0 !important;
+  }
+}
 /*# sourceMappingURL=footer.css.map */
