@@ -343,7 +343,7 @@ main .chat .chat-area {
 }
 
 main .chat .chat-area .center {
-  padding: 2% 0;
+  padding: 2% 10%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,12 +351,29 @@ main .chat .chat-area .center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3vw;
 }
 
 main .chat .chat-area .center img {
   width: 80%;
   -webkit-transform: translateY(-2vw);
           transform: translateY(-2vw);
+}
+
+main .chat .chat-area .center .first {
+  width: 30vw;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 1vw;
+  background: var(--clr-white);
+  font-size: var(--fs-md);
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom-left-radius: 1vw;
 }
 
 @media (max-width: 760px) {

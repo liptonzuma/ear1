@@ -274,14 +274,26 @@ main{
             width: 50%;
             background: var(--clr-chat-bg);
             .center{
-                padding: 2% 0;
+                padding: 2% 10%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                gap: 3vw;
 
                 img{
                     width: 80%;
                     transform: translateY(-2vw);
+                }
+                .first{
+                    width: 30vw;
+                    align-self: flex-end;
+                    padding: 1vw;
+                    background: var(--clr-white);
+                    font-size: var(--fs-md);
+                    border-top-left-radius: 1vw;
+                    border-top-right-radius: 1vw;
+                    border-bottom-left-radius: 1vw;
                 }
             }
         }
