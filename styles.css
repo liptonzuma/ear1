@@ -524,6 +524,13 @@ main .influencers .text .lead {
   nav .nav-items li {
     margin-right: 2rem;
   }
+  main .influencers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .influencers .image, main .influencers .text {
+    width: 100%;
+  }
   main .fans {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

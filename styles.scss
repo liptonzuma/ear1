@@ -414,6 +414,12 @@ main{
         }
     }
     main {
+        .influencers{
+            flex-wrap: wrap;
+            .image,.text{
+                width:100%
+            }
+        }
         .fans{
             flex-wrap: wrap;
             gap:1rem;
