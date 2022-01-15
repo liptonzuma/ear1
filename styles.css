@@ -1,9 +1,12 @@
 :root {
   --clr-green:#029f58;
+  --clr-deep-green:#007640;
   --clr-white:#FFFF;
   --clr-black:#000;
   --clr-orange:#ffbb62;
   --clr-gray:gray;
+  --clr-copper:#fe8b61;
+  --clr-chat-bg:#f0f0e6;
   --ff:'DM Sans', sans-serif;
   --fw-700:700;
   --fw-500:500;
@@ -167,7 +170,7 @@ main .feature {
 main .feature h1 {
   font-size: var(--fs-lg);
   width: var(--h1-w);
-  color: var(--clr-green);
+  color: var(--clr-deep-green);
   line-height: 5vw;
   font-weight: var(--fw-500);
 }
@@ -336,8 +339,24 @@ main .chat .text .container .lead {
 
 main .chat .chat-area {
   width: 50%;
-  background: var(--clr-white);
-  height: 50vh;
+  background: var(--clr-chat-bg);
+}
+
+main .chat .chat-area .center {
+  padding: 2% 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .chat .chat-area .center img {
+  width: 80%;
+  -webkit-transform: translateY(-2vw);
+          transform: translateY(-2vw);
 }
 
 @media (max-width: 760px) {

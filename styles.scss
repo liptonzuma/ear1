@@ -1,9 +1,12 @@
 :root{
     --clr-green:#029f58;
+    --clr-deep-green:#007640;
     --clr-white:#FFFF;
     --clr-black:#000;
     --clr-orange:#ffbb62;
     --clr-gray:gray;
+    --clr-copper:#fe8b61;
+    --clr-chat-bg:#f0f0e6;
 
     --ff:'DM Sans', sans-serif;
 
@@ -135,7 +138,7 @@ main{
         h1{
             font-size: var(--fs-lg);
             width:var(--h1-w);
-            color: var(--clr-green);
+            color: var(--clr-deep-green);
             line-height: 5vw;
             font-weight: var(--fw-500);
         }
@@ -269,8 +272,18 @@ main{
         }
         .chat-area{
             width: 50%;
-            background: var(--clr-white);
-            height: 50vh;
+            background: var(--clr-chat-bg);
+            .center{
+                padding: 2% 0;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 80%;
+                    transform: translateY(-2vw);
+                }
+            }
         }
     }
 }
