@@ -410,7 +410,7 @@ main .chat .chat-area .center .first small {
   -ms-flex-item-align: end;
       align-self: flex-end;
   position: absolute;
-  top: 5vw;
+  bottom: 0;
 }
 
 main .chat .chat-area .center .second {
