@@ -367,7 +367,7 @@ main .chat .chat-area .center img {
 
 main .chat .chat-area .center .first {
   width: 27vw;
-  padding: 1vw;
+  padding: .5vw 1vw;
   background: var(--clr-white);
   font-size: var(--fs-regular);
   border-top-left-radius: 1vw;
@@ -427,6 +427,12 @@ main .chat .chat-area .input {
   margin-top: 5%;
   padding: 2%;
   width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .chat .chat-area .input .container {
@@ -450,10 +456,14 @@ main .chat .chat-area .input .container .clip1 {
   margin-right: .7rem;
 }
 
-main .chat .chat-area .input .container img {
+main .chat .chat-area .input img {
   width: 2vw;
   -webkit-transform: translateY(0.05vw);
           transform: translateY(0.05vw);
+}
+
+main .chat .chat-area .input .send {
+  margin-left: .4rem;
 }
 
 @media (max-width: 760px) {
@@ -490,6 +500,14 @@ main .chat .chat-area .input .container img {
   main .chat .chat-area .center .first, main .chat .chat-area .center .second, main .chat .chat-area .center .third {
     width: 80vw;
     margin: 5% 0;
+  }
+  main .chat .chat-area .input {
+    width: 80vw;
+  }
+  main .chat .chat-area .input img {
+    width: 3vw;
+    -webkit-transform: translateY(0.05vw);
+            transform: translateY(0.05vw);
   }
 }
 

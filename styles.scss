@@ -287,7 +287,7 @@ main{
                 }
                 .first{
                     width: 27vw;
-                    padding: 1vw;
+                    padding: .5vw 1vw;
                     background: var(--clr-white);
                     font-size: var(--fs-regular);
                     border-top-left-radius: 1vw;
@@ -336,6 +336,8 @@ main{
                 margin-top: 5%;
                 padding: 2%;
                 width: 80%;
+                display: flex;
+                align-items: center;
                 .container{
                     width: 90%;
                     background: #eee;
@@ -348,11 +350,15 @@ main{
                         opacity: .7;
                         margin-right:.7rem ;
                     }
-                    img{
-                      width: 2vw;  
-                      transform: translateY(.05vw);
-                    }
+                    
                 }
+                img{
+                    width: 2vw;  
+                    transform: translateY(.05vw);
+                  }
+                  .send{
+                      margin-left: .4rem;
+                  }
             }
         }
     }
@@ -400,7 +406,14 @@ main{
                     margin: 5% 0;
                 }
             }
+            .input{
+                width: 80vw;
+            img{
+                width: 3vw;  
+                transform: translateY(.05vw);
+              }
             }
+        }
         }
     }
 }
