@@ -258,6 +258,12 @@ main .ad img {
   opacity: .8;
 }
 
+@media (max-width: 325px) {
+  main .hero {
+    padding-top: 30%;
+  }
+}
+
 @media (max-width: 920px) {
   footer {
     -webkit-box-orient: vertical;

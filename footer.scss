@@ -188,6 +188,12 @@
     }
 }
 //////////////////////////////////Breakpoints//////////////////////////////////
+@media (max-width:325px) {
+    main .hero{
+        padding-top: 30%;
+    }
+    
+}
 @media (max-width:920px) {
     footer{
         flex-direction: column;

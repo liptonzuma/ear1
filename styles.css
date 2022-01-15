@@ -337,9 +337,11 @@ main .chat .text .wrapper {
 }
 
 main .chat .text .wrapper img {
-  width: 4.5vw;
+  width: calc(4.5vw + .9rem);
 }
-
+main .filter img {
+  width: calc(4.5vw + .9rem);
+}
 main .chat .text .container {
   padding-top: 7%;
   color: var(--clr-white);
@@ -538,8 +540,14 @@ main .influencers .text .lead {
   color: var(--clr-gray);
   padding-top: 5%;
 }
+main .influencers .image img{
+  width: 60%;
+}
 
 @media (max-width:420px) {
+  main .hero .lead-container .lead{
+    font-size: calc(var(--fs-md) + .08rem) !important;
+  }
   nav{
     flex-direction: column;
   }
@@ -552,6 +560,7 @@ main .influencers .text .lead {
 }
 
 @media (max-width: 760px) {
+  
   .download img{
     width: calc(var(--btn-img-w) + 4rem) !important;
   }
