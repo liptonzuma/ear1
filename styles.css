@@ -26,6 +26,22 @@
   --btn-w:Clamp(3rem, 7vw + 1rem,7vw)
 ;
 }
+@media (max-width:920px) {
+  :root{
+    --fs-sm:calc(Clamp(.7rem, 1.3vw + 1rem, 1.3vw) + .4rem);
+    --fs-xl:calc(Clamp(4vw, 8.9vw + 1rem ,8.9vw) + .4rem);
+    --fs-md:calc(Clamp(.7rem, 1.4vw + 1rem ,1.45vw ) + .4rem);
+    --fs-lg:calc(Clamp(3vw, 5vw + 1rem,5vw) + .4rem);
+    --fs-regular:calc(Clamp(.8rem,1.35vw + 1rem , 1.35vw) + .4rem);
+    --fs-header:calc(Clamp(2.44vw,4.88vw + 1rem, 4.88vw) + .4rem);
+    --fs-btn:calc(Clamp(.6vw, 1.2vw + 1rem, 1.2vw + .7rem));
+    --lg-w:calc(Clamp(4vw, 8vw + 1rem ,8vw) + .4rem);
+    --btn-img-w:calc(Clamp(9vw,18vw + 1rem,18vw) + .4rem);
+    --phones-w:calc(Clamp(45vw,90vw + 1rem, 90vw) + .4rem);
+    --btn-w:calc(Clamp(3rem, 7vw + 1rem,7vw) + .2rem)
+  }
+
+}
 
 * {
   margin: 0;
@@ -523,7 +539,33 @@ main .influencers .text .lead {
   padding-top: 5%;
 }
 
+@media (max-width:420px) {
+  nav{
+    flex-direction: column;
+  }
+  nav .logo{
+    width: calc(var(--lg-w) + 1rem);
+  }
+  main .hero{
+    padding-top: 20%;
+  }
+}
+
 @media (max-width: 760px) {
+  .download img{
+    width: calc(var(--btn-img-w) + 4rem) !important;
+  }
+  
+  .btnText{
+    font-size: calc(var(--fs-btn) + .3rem) !important;
+  }
+  .lead{
+    font-size: calc(var(--fs-md) + .3rem) !important;
+  }
+  
+  main .chat .chat-area .center{
+    margin-left: 0%;
+  }
   nav .nav-items li {
     margin-right: 2rem;
   }

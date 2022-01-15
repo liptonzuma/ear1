@@ -26,6 +26,11 @@
     --btn-w:Clamp(3rem, 7vw + 1rem,7vw)
   ;
   }
+  *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+  }
 
   main{
       .black{
@@ -106,7 +111,108 @@
       }
   }
 
+.footer{
+    padding: 0% 10%;
+    display: flex;
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        width:25%;
+        align-self: center;
+        justify-content: center;
+        .media{
+            display: flex;
+            justify-content: center;
+            gap:10%;
+            padding: 2% 0;
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .container{
+        width:75%;
+        display: flex;
+        flex-direction: column;
+        .lead{
+            font-size: calc(var(--fs-regular) + .5rem);
+        }
+        form{
+            margin: 3% 0 5% 0;
+            display: flex;
+            input{
+                width:80%;
+                border: .08rem solid silver;
+                padding: .8rem .8rem .8rem 1rem;
+                border-top-left-radius: .5rem;
+                border-bottom-left-radius: .5rem;
+                font-size: var(--fs-regular);
+                margin-bottom: 2%;
+                font-weight: var(--fw-400);
+                height: 3rem;
+
+            }
+            button{
+                color: var(--clr-white);
+                background: var(--clr-black);
+                width:20%;
+                padding:0rem !important;
+                border: none;
+                outline: none;
+                font-size: .8rem;
+                font-weight: var(--fw-700);
+                height:3rem;
+                border-top-right-radius: .5rem;
+                border-bottom-right-radius: .5rem;
+                text-transform: uppercase;
+            }
+        }
+        .navigation{
+            display: flex;
+            gap:13%;
+            a{
+                color: var(--clr-black);
+                display: block;
+                font-weight: var(--fw-400);
+                padding: 1rem 0;
+                opacity: .8;
+            }
+            .title{
+                padding-bottom: 25%;
+                font-size:calc( var(--fs-md) + .4rem);
+                font-weight: var(--fw-500);
+                opacity: .8;
+            }
+        }
+    }
+}
 //////////////////////////////////Breakpoints//////////////////////////////////
+@media (max-width:920px) {
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button{
+            
+        }
+        .navigation{
+            flex-wrap: wrap;
+            justify-content: center;
+            .title{
+                padding: 2% 0;
+            }
+            a{
+                font-size: calc( var(--fs-sm) + .2rem) ;
+
+            }
+        }
+        .container{
+            width: 90vw !important;
+        }
+
+    }
+}
 @media (max-width: 760px) {
     .black{
         flex-wrap: wrap;
