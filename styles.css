@@ -498,11 +498,11 @@ main .influencers .text {
 
 main .influencers .text .btn {
   background: var(--clr-copper);
-  width: 8vw;
-  border-radius: 999px;
+  width:8rem;
   text-align: center;
+  padding: .3rem 0;
+  border-radius: 999px;
   font-weight: var(--fw-500);
-  padding: 0.3rem .5rem;
 }
 
 main .influencers .text .header {
@@ -591,4 +591,3 @@ main .influencers .text .lead {
     margin-right: 1rem;
   }
 }
-/*# sourceMappingURL=styles.css.map */
