@@ -145,7 +145,7 @@ main .ad img {
 }
 
 .footer {
-  padding: 0% 10%;
+  padding: 0% 10% 5% 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -562,7 +562,7 @@ main .influencers .image img{
 @media (max-width: 760px) {
   
   .download img{
-    width: calc(var(--btn-img-w) + 4rem) !important;
+    width: calc(var(--btn-img-w) + 2rem) !important;
   }
   
   .btnText{
