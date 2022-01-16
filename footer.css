@@ -286,6 +286,7 @@ main .ad img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 20%;
   }
   footer .navigation .title {
     padding: 2% 0;
