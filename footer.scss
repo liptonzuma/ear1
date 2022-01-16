@@ -83,9 +83,6 @@
               padding-bottom: 7%;
 
               img{
-                  flex-grow: 0;
-                  flex-basis: 1;
-                  flex-shrink: 2;
                   width:75%;
                   transform: translateY(-2vw);
               }
@@ -223,6 +220,7 @@
 @media (max-width: 760px) {
     .black{
         flex-wrap: wrap;
+        align-items: center !important;
         .text,.image{
             width:100% !important;
         }

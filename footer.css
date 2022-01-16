@@ -107,13 +107,6 @@ main .black .image {
 }
 
 main .black .image img {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-preferred-size: 1;
-      flex-basis: 1;
-  -ms-flex-negative: 2;
-      flex-shrink: 2;
   width: 75%;
   -webkit-transform: translateY(-2vw);
           transform: translateY(-2vw);
@@ -303,6 +296,9 @@ main .ad img {
   .black {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   .black .text, .black .image {
     width: 100% !important;
