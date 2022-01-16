@@ -46,7 +46,7 @@ main .black {
 
 main .black .text {
   width: 50%;
-  background: #222222;
+  background: #1f1f1f;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
@@ -101,7 +101,7 @@ main .black .image {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #333333;
+  background: #363636;
   border-right: 1px solid silver;
   padding-bottom: 7%;
 }
