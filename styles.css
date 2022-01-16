@@ -650,4 +650,8 @@ main .influencers .image img{
   nav .nav-items li {
     margin-right: 1rem;
   }
+  .header{
+  font-size: calc(var(--fs-header) + .4rem) !important;
+
+  }
 }
