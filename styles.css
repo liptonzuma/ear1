@@ -560,6 +560,10 @@ main .influencers .image img{
 }
 
 @media (max-width: 760px) {
+  .px{
+    padding: 0 5% !important;
+    text-align: justify;
+  }
   
   .download img{
     width: calc(var(--btn-img-w) + 2rem) !important;
