@@ -247,7 +247,7 @@ main .fans .container {
 
 main .fans .btn {
   background: var(--clr-orange);
-  width: var(--btn-w);
+  width: calc(var(--btn-w) + .2rem);
   text-align: center;
   border-radius: 2.5vw;
   text-transform: capitalize;
@@ -586,7 +586,7 @@ main .influencers .image img{
     width: 100%;
   }
   main .influencers .image img{
-    width:60vw
+    width:60%
   }
   main .influencers .text{
     padding:5%
